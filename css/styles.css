@@ -43,17 +43,52 @@ body {
     width: 100vw;
 }
 
-/* GALERIA */
-.ink-section__img>img {
-    height: 200px;
-    width: auto;
+.main__section--group {
+    padding: 200px 0 0 400px;
 }
 
-.subs-section__img>img {
-    height: 300px;
-    width: auto;
+.main__section h1,
+.main__section h2 {
+    margin: 0;
+    color: white;
 }
 
+.main__section h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main__section h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+/* NAV */
+.nav__li {
+    display: inline-block;
+}
+
+.nav__ul {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin: 0;
+}
+
+.nav__a {
+    padding: 15px;
+}
+
+.nav__ul a:visited {
+    color: black;
+}
+
+.nav__ul a:link {
+    color: black;
+}
 
 li,
 a {
@@ -61,20 +96,29 @@ a {
     text-decoration: none;
 }
 
-/* INDEX */
-.nav__li {
+/* GALERIA */
+
+.inks-section__img {
     display: inline-block;
 }
 
+
+.inks-section__img img {
+    max-height: 200px;
+    width: auto;
+}
 
 .inks-section {
     width: 45vw;
     margin: 50px auto 50px auto;
 }
 
-.ink-section__img {
-    display: inline-block;
+.inks-section h2 {
+    font-family: 'Oxygen', sans-serif;
+    color: #C9B488;
+    font-size: 3rem;
 }
+
 
 /* FOOTER */
 .main__footer {
@@ -90,13 +134,43 @@ a {
 }
 
 .footer__nav {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    color: #eee;
     display: inline-block;
 }
 
 .footer__copy {
+    color: white;
     padding: 16px;
     margin-bottom: 0;
     display: block;
+}
+
+.footer__social--group li a {
+    background-color: #C9B488;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.footer__social--group i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer a:visited {
+    color: white;
+}
+
+.footer a:link {
+    color: white;
+}
+
+/* FORMULARIO NEWSLETTER */
+.subs-section__img>img {
+    height: 300px;
+    width: auto;
 }
 
 .subs-section__container {
@@ -104,25 +178,31 @@ a {
     margin: 50px auto 50px auto;
     padding: 30px;
     border: 2px solid #D9CCB2;
+
 }
 
-/* FORMULARIO NEWSLETTER */
 .form__label,
 .form__input {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
     margin: 10px;
     display: block;
 }
 
 .form__group {
     margin: 15px;
+
 }
 
 .form__input {
+
     border: solid 1px #eee;
     padding: 10px;
 }
 
 .form__input--submit {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
     padding: 10px;
     border: none;
     background-color: #D9CCB2;
