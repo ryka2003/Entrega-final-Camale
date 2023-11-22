@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+/* HERO */
+.main__section--index {
+    background-image: url("../imgs/main-section/iro-bottle-ink.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100vw;
+}
+
+.main__section--history {
+    background-image: url("../imgs/main-section/mini-brass.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100vw;
+}
+
+.main__section--brands {
+    background-image: url("../imgs/main-section/multi-inks.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100vw;
+}
+
+.main__section--contact {
+    background-image: url("../imgs/main-section/red-letter.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100vw;
+}
+
+.main__section--to-buy {
+    background-image: url("../imgs/main-section/pilot-close-up.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    width: 100vw;
+}
+
+/* GALERIA */
+.ink-section__img>img {
+    height: 200px;
+    width: auto;
+}
+
+.subs-section__img>img {
+    height: 300px;
+    width: auto;
+}
+
+
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* INDEX */
+.nav__li {
+    display: inline-block;
+}
+
+
+.inks-section {
+    width: 45vw;
+    margin: 50px auto 50px auto;
+}
+
+.ink-section__img {
+    display: inline-block;
+}
+
+/* FOOTER */
+.main__footer {
+    background-color: #D9CCB2;
+    width: 100vw;
+    max-height: 250px;
+}
+
+.footer__social--group li,
+.footer__li {
+    margin: 0 10px 0 10px;
+    display: inline;
+}
+
+.footer__nav {
+    display: inline-block;
+}
+
+.footer__copy {
+    padding: 16px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.subs-section__container {
+    width: 45vw;
+    margin: 50px auto 50px auto;
+    padding: 30px;
+    border: 2px solid #D9CCB2;
+}
+
+/* FORMULARIO NEWSLETTER */
+.form__label,
+.form__input {
+    margin: 10px;
+    display: block;
+}
+
+.form__group {
+    margin: 15px;
+}
+
+.form__input {
+    border: solid 1px #eee;
+    padding: 10px;
+}
+
+.form__input--submit {
+    padding: 10px;
+    border: none;
+    background-color: #D9CCB2;
+    border-radius: 5px;
+    width: 30%;
+}
