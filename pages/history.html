@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="main__header header">
         <figure>
-            <a href="../index.html"><img src="../imgs/logo.png" alt="logo" height="200px" width="200px"></a>
+            <a href="../index.html"><img src="../imgs/logo.png" alt="logo" height="175px" width="175px"></a>
         </figure>
         <!-- BARRA NAV -->
         <nav class="header__nav nav">
@@ -47,30 +47,69 @@
             <h1 class="section__h1">De la antigua Roma al siglo XXI</h1>
         </section>
         <section>
-            <article>
-                <h2>Historia</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at dicta
-                    dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt esse.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at dicta
-                    dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt esse.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at dicta
-                    dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt esse.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nisi, velit veniam accusantium nihil
-                    nulla. Obcaecati excepturi consectetur dolorem esse, architecto quos. Assumenda sequi facilis
-                    aspernatur animi iure velit corrupti.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at dicta
-                    dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt esse.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at dicta
-                    dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt esse.
-                </p>
+            <article class="article-history">
+                <div class="article-history__text-container">
+                    <h2 class="article-history__h2 main__h2">Historia</h2>
+                    <p class="article-history__p main__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+                        ad
+                        quas accusamus impedit, at dicta
+                        dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt
+                        esse.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at
+                        dicta
+                        dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt
+                        esse.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at
+                        dicta
+                        dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt
+                        esse.
+                    </p>
+                    <p class="article-history__p main__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Esse nisi, velit veniam accusantium nihil
+                        nulla. Obcaecati excepturi consectetur dolorem esse, architecto quos. Assumenda sequi facilis
+                        aspernatur animi iure velit corrupti.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at
+                        dicta
+                        dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt
+                        esse.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quas accusamus impedit, at
+                        dicta
+                        dolore placeat similique, vel hic a minus animi laudantium voluptates, modi saepe culpa sunt
+                        esse.
+                    </p>
+                </div>
             </article>
         </section>
         <section class="section-anatomy anatomy">
-            <h2 class="anatomy__h2">Anatomia</h2>
-            <div class="anatomy__img">
-                <img src="../imgs/pen-anatomy/Infographic-Anatomy-Pen_Parts-Sailor_1911.jpg" alt="partes de una pluma">
-            </div>
+            <h2 class="anatomy__h2 main__h2">Anatomia</h2>
+            <section class="gallery__container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="../imgs/pen-anatomy/Infographic-Anatomy-Pen_Parts-Sailor_1911.jpg"
+                            alt="">
+                        <img id="slide-2" src="../imgs/pen-anatomy/Main-Anatomy-Pen_Parts-Sailor_1911.jpg" alt="">
+                        <img id="slide-3" src="../imgs/pen-anatomy/The_Barrel-Anatomy-Infographic-Sailor-1911.jpg"
+                            alt="">
+                        <img id="slide-4" src="../imgs/pen-anatomy/The_Cap-Anatomy-Infographic-Sailor-1911.jpg" alt="">
+                        <img id="slide-5" src="../imgs/pen-anatomy/The_Converter-Anatomy-Infographic-Sailor-1911.jpg"
+                            alt="">
+                        <img id="slide-6" src="../imgs/pen-anatomy/The_Feed-Anatomy-Infographic-Sailor-1911.jpg" alt="">
+                        <img id="slide-7" src="../imgs/pen-anatomy/The_Nib-Anatomy-Infographic-Sailor-1911.jpg" alt="">
+                        <img id="slide-8" src="../imgs/pen-anatomy/The_Section-Anatomy-Infographic-Sailor-1911.jpg"
+                            alt="">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                        <a href="#slide-8"></a>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <!-- FOOTER -->
@@ -94,9 +133,10 @@
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
                             aria-hidden="true"></i></a></li>
             </ul>
-            <p class="footer__copy">Copyright | 2023
-            </p>
+
         </div>
+        <p class="footer__copy">Copyright | 2023
+        </p>
     </footer>
     <script src="https://kit.fontawesome.com/93a4c88572.js" crossorigin="anonymous"></script>
 
