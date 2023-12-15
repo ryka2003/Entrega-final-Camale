@@ -4,47 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Oxygen:wght@300&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>De novato a coleccionista</title>
 </head>
 
 <body>
 
     <header class="main__header header">
+        <nav class="header__nav nav navbar navbar-expand-sm">
+            <div class="container-fluid">
 
-        <figure>
-            <a href="./index.html"><img src="../imgs/logo.png" alt="logo" height="175px" width="175px"></a>
-        </figure>
-        <!-- BARRA NAV -->
-        <nav class="header__nav nav">
-            <input style="display: none;" type="checkbox" id="toggleCheckbox" class="toggleClass">
-            <ul class="nav__ul toggleCard">
-                <li class="nav__li"><a class="nav__a" href="./pages/history.html">Historia</a></li>
-                <li class="nav__li"><a class="nav__a" href="./pages/brands.html">Marcas</a>
-                    <ul class="nav__list">
-                        <li><a class="nav__list-item" href="../pages/brands.html#kaweco-brand">Kaweco</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#lamy-brand">Lamy</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#montblanc-brand">Montblanc</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#parker-brand">Parker</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#pelikan-brand">Pelikan</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#pilot-brand">Pilot</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#sheaffer-brand">Sheaffer</a></li>
-                        <li><a class="nav__list-item" href="../pages/brands.html#waterman-brand">Waterman</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img src="/imgs/logo.png" alt="logo" height="175px"
+                        width="175px"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav__ul navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav__li nav-item active">
+                            <a class="nav__a nav-link" href="#">Historia</a>
+                        </li>
+                        <li class="nav__a nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Marcas
+                            </a>
+                            <ul class="nav__list dropdown-menu">
+                                <li><a class="nav__list-item dropdown-item" href="#">Kaweco</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Lamy</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Montblanc</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Parker</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Pelikan</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Pilot</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Sheaffer</a></li>
+                                <li><a class="nav__list-item dropdown-item" href="#">Waterman</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__li nav-item active">
+                            <a class="nav__a nav-link" href="#">Donde Comprar</a>
+                        </li>
+                        <li class="nav__li nav-item active">
+                            <a class="nav__a nav-link" href="#">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav__li"><a class="nav__a" href="./pages/to-buy.html">Donde Comprar</a></li>
-                <li class="nav__li"><a class="nav__a" href="./pages/contact.html">Contacto</a></li>
-            </ul>
-
+                </div>
+            </div>
         </nav>
-        <label class="header__menu-toggler" for="toggleCheckbox">
-            <i class="fa-solid fa-bars"></i>
-        </label>
     </header>
     <main class="main">
         <!-- HERO -->
@@ -119,6 +134,9 @@
         </p>
     </footer>
     <script src="https://kit.fontawesome.com/93a4c88572.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
