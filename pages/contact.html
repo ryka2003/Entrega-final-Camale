@@ -71,29 +71,41 @@
         <!-- HERO -->
         <section class="main__section main__section--contact">
             <h1 class="section__h1">Queremos saber tu opinion</h1>
-
         </section>
-        <form action="">
-            <h3>Dejanos un mensaje </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quis. Culpa incidunt ex laudantium
-                nostrum! Alias, odio vitae atque nemo adipisci modi eius soluta non blanditiis, fuga quo minus nulla?
-            </p>
-            <div>
-                <label for="contact-name">Nombre:</label>
-                <input id="contact-name" type="text" placeholder="Nombre">
-            </div>
-            <div><label for="contact-email">Email:</label>
-                <input id="contact-email" type="email">
-            </div>
-            <div>
-                <label for="contact-message">Mensaje:</label>
-                <textarea name="text" id="contact-message" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-            </div>
-
-            <input type="submit" value="Enviar">
 
 
-        </form>
+        <!-- CONTACTO CONTENIDO -->
+        <section class="section-contact subs-section__container">
+            <form class="contact__form form" action="">
+                <div class="form__group">
+                    <h3 class="contact__h3 main__h3">Dejanos un mensaje </h3>
+                    <p class="main__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quis. Culpa
+                        incidunt ex
+                        laudantium
+                        nostrum! Alias, odio vitae atque nemo adipisci modi eius soluta non blanditiis, fuga quo minus
+                        nulla?
+                    </p>
+                </div>
+
+                <div class="form__group--data">
+                    <div class="form__group">
+                        <label class="form__label" for="contact-name">Nombre:</label>
+                        <input class="form__input" id="contact-name" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="contact-email">Email:</label>
+                        <input class="form__input" id="contact-email" type="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label" for="contact-message">Mensaje:</label>
+                    <textarea class="form__input input__message" name="text" id="contact-message" cols="30" rows="5"
+                        placeholder="Tu mensaje"></textarea>
+                </div>
+                <input class="form__input--submit contact__submit" type="submit" value="Enviar">
+            </form>
+        </section>
 
     </main>
     <!-- FOOTER -->
