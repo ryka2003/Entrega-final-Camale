@@ -1,0 +1,45 @@
+.main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    max-width: 100vw;
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 400;
+        font-family: $main-font-family;
+    }
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: $second-font-family;
+    }
+
+    &--index {
+        background-image: url("../imgs/main-section/brand-nibs.jpg");
+    }
+    &--history {
+        background-image: url("../imgs/main-section/mini-brass.jpg");
+    }
+    &--brands {
+        background-image: url("../imgs/main-section/bottle-inks.jpg");
+    }
+    &--contact {
+        background-image: url("../imgs/main-section/red-letter.jpg");
+    }
+    &--to-buy {
+        background-image: url("../imgs/main-section/pilot-close-up.jpg");
+    }
+    &--group {
+        padding: 5px 0 5px 0;
+        width: 100vw;
+        background-color: $semi-white-transparency;
+    }
+}
