@@ -1,0 +1,30 @@
+.section-contact {
+    padding: 0.5rem;
+    .form__group {
+        @include marpad(0, 0.75rem);
+    }
+}
+.section-contact .form__input,
+.section-contact .form__label {
+    @include marpad(0, 0.3125rem);
+}
+.form__group {
+    p {
+        margin: 0;
+    }
+    h3 {
+        text-align: center;
+        padding: 0.625rem;
+    }
+    &--data {
+        @include flex(flex, space-between, null);
+        flex-direction: row;
+    }
+}
+
+.input__message {
+    width: 100%;
+}
+.contact__submit {
+    margin: 1rem;
+}

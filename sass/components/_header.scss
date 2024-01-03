@@ -22,8 +22,7 @@
         justify-content: flex-end;
     }
     &-brand {
-        margin: 0;
-        padding: 1rem;
+        @include marpad(0, 1rem);
     }
     &-toggler-icon {
         font-size: 1.5rem;
@@ -32,10 +31,9 @@
 
 .nav {
     &__ul {
+        @include marpad(0, 1rem);
         font-family: $second-font-family;
         font-size: 1.5rem;
-        padding: 1rem;
-        margin: 0;
     }
     &__list {
         padding: 0;

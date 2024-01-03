@@ -1,0 +1,47 @@
+.card__h3,
+.card__h4 {
+    text-align: left;
+    padding: 0.65rem;
+}
+
+.card {
+    li {
+        text-decoration: none;
+        font-family: $para-font-family;
+        font-size: 1rem;
+        list-style-type: none;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    h4 {
+        font-family: $second-font-family;
+        font-size: 1.2rem;
+        font-weight: 350;
+    }
+}
+section {
+    .to-buy__card {
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        box-shadow: $box-shadow;
+        ul {
+            padding: 1.5rem;
+        }
+        img {
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+.to-buy__container {
+    @include flex(flex, center, null);
+    gap: 5rem;
+    article {
+        @include flex(flex, null, stretch);
+    }
+}

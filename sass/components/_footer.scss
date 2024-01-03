@@ -1,10 +1,9 @@
 .main__footer {
-    display: flex;
+    @include flex(flex, center, center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: $main-color;
     max-width: 100vw;
+    margin-top: 1rem;
 }
 .footer__social--group li,
 .footer__li {
@@ -21,15 +20,11 @@
             color: $white-color;
         }
     }
-
-    &__social {
-        padding: 1rem;
-    }
     &__nav {
         font-family: $second-font-family;
         font-size: 1rem;
         color: $off-white-color;
-        padding: 1.5rem;
+        padding: 1.3rem 0 0 0;
     }
     &__copy {
         color: $white-color;
@@ -40,19 +35,15 @@
 
 .footer__social--group {
     a {
+        @include flex(flex, center, center);
         background-color: $main-color;
         height: 3.125rem;
         width: 3.125rem;
         border-radius: 50%;
         color: $white-color;
         font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(flex, center, null);
+    @include marpad(0, 0);
     flex-direction: row;
 }

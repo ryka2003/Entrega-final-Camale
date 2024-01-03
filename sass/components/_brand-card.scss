@@ -1,0 +1,44 @@
+.main__h3 {
+    font-size: 1.75rem;
+    font-weight: 550;
+}
+.card {
+    width: 40vw;
+    margin: 50px auto 50px auto;
+    border: 2px solid $second-color;
+    display: flex;
+    flex-direction: row;
+    &__img {
+        height: 18.75rem;
+        width: 18.75rem;
+        box-shadow: $box-shadow;
+        img {
+            height: 100%;
+            width: auto;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+.card__container {
+    @include flex(flex, space-between, null);
+    padding: 1.25rem;
+    flex-direction: column;
+    a {
+        display: inline;
+        font-family: $second-font-family;
+        font-size: 1rem;
+        padding: 0.625rem;
+        border: none;
+        background-color: $second-color;
+        border-radius: 5px;
+        align-self: flex-start;
+        &:visited {
+            color: $black-color;
+        }
+        &:link {
+            color: $black-color;
+        }
+    }
+}
