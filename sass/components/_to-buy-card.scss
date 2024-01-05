@@ -41,6 +41,7 @@
     flex-direction: column;
     width: 15vw;
     box-shadow: $box-shadow;
+
     ul {
         padding: 1.5rem;
     }
@@ -49,6 +50,15 @@
         -o-object-fit: cover;
         object-fit: cover;
     }
+    a {
+        &:visited {
+            color: $black-color;
+        }
+        &:link {
+            color: $black-color;
+        }
+    }
+
     @media screen and (map_get($media_queries, "tablet")) {
         width: 30vw;
         div {
