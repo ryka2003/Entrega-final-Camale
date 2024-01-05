@@ -1,0 +1,45 @@
+.section-contact {
+    padding: 0.5rem;
+    .form__group {
+        @include marpad(0, 0.75rem);
+        &--data {
+            @media screen and (map_get($media_queries, "tablet")) {
+                flex-direction: column;
+            }
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+.subs-section__container {
+    @media screen and (map_get($media_queries, "mobile")) {
+        width: 100vw;
+        padding: 0.9375rem;
+    }
+}
+
+.section-contact .form__input,
+.section-contact .form__label {
+    @include marpad(0, 0.3125rem);
+}
+.form__group {
+    p {
+        margin: 0;
+    }
+    h3 {
+        text-align: center;
+        padding: 0.625rem;
+    }
+    &--data {
+        @include flex(flex, space-between, null);
+        flex-direction: row;
+    }
+}
+
+.input__message {
+    width: 100%;
+}
+.contact__submit {
+    margin: 1rem;
+}
