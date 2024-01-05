@@ -20,16 +20,36 @@
             color: $white-color;
         }
     }
+
+    &__copy {
+        color: $white-color;
+        padding: 1rem;
+        margin-bottom: 0;
+    }
+
     &__nav {
         font-family: $second-font-family;
         font-size: 1rem;
         color: $off-white-color;
         padding: 1.3rem 0 0 0;
     }
-    &__copy {
-        color: $white-color;
-        padding: 1rem;
-        margin-bottom: 0;
+    @media screen and (map_get($media_queries, "tablet")) {
+        i {
+            font-size: 1rem;
+        }
+        &__nav {
+            padding: 1rem;
+        }
+        &__copy {
+            padding: 0.3125rem 0 0 0;
+            font-size: 0.8rem;
+        }
+        &__li {
+            font-size: 0.85rem;
+        }
+        &__social {
+            padding: 0;
+        }
     }
 }
 
@@ -46,4 +66,11 @@
     @include flex(flex, center, null);
     @include marpad(0, 0);
     flex-direction: row;
+    @media screen and (map_get($media_queries, "tablet")) {
+        margin: 0;
+        a {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
 }

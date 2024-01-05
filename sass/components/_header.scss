@@ -3,6 +3,10 @@
     width: 100%;
     position: absolute;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8099440459777661) 0%, rgba(255, 255, 255, 0) 100%);
+    @media screen and (map_get($media_queries, "mobile")) {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9892157546612395) 92%, rgba(255, 255, 255, 0) 100%);
+    }
 }
 .navbar {
     .container-fluid {
@@ -26,6 +30,24 @@
     }
     &-toggler-icon {
         font-size: 1.5rem;
+    }
+    @media screen and (map_get($media_queries, "tablet")) {
+        a {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (map_get($media_queries, "mobile")) {
+        &-brand {
+            @include marpad(0, 1rem);
+            img {
+                height: 100px;
+                width: auto;
+            }
+        }
+        &-nav {
+            padding-bottom: 2rem;
+        }
     }
 }
 

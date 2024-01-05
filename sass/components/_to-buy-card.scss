@@ -20,28 +20,53 @@
         font-weight: 350;
     }
 }
-section {
-    .to-buy__card {
-        margin: 1rem 0 1rem 0;
-        display: flex;
-        flex-direction: column;
-        width: 15vw;
-        box-shadow: $box-shadow;
-        ul {
-            padding: 1.5rem;
-        }
-        img {
-            width: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-        }
-    }
-}
-
 .to-buy__container {
     @include flex(flex, center, null);
     gap: 5rem;
     article {
         @include flex(flex, null, stretch);
+    }
+    @media screen and (map_get($media_queries, "tablet")) {
+        gap: 1rem;
+    }
+
+    @media screen and (map_get($media_queries, "mobile")) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.to-buy__card {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    box-shadow: $box-shadow;
+    ul {
+        padding: 1.5rem;
+    }
+    img {
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    @media screen and (map_get($media_queries, "tablet")) {
+        width: 30vw;
+        div {
+            width: 100%;
+        }
+    }
+    @media screen and (map_get($media_queries, "mobile")) {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        width: 80vw;
+        div {
+            width: 100%;
+            height: 40%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }

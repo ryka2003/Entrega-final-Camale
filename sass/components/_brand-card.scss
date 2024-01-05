@@ -8,8 +8,9 @@
     border: 2px solid $second-color;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
     &__img {
-        height: 18.75rem;
+        max-height: 18.75rem;
         width: 18.75rem;
         box-shadow: $box-shadow;
         img {
@@ -19,26 +20,49 @@
             object-fit: cover;
         }
     }
-}
-
-.card__container {
-    @include flex(flex, space-between, null);
-    padding: 1.25rem;
-    flex-direction: column;
-    a {
-        display: inline;
-        font-family: $second-font-family;
-        font-size: 1rem;
-        padding: 0.625rem;
-        border: none;
-        background-color: $second-color;
-        border-radius: 5px;
-        align-self: flex-start;
-        &:visited {
-            color: $black-color;
+    &__content {
+        @include flex(flex, space-between, null);
+        padding: 1.25rem;
+        flex-direction: column;
+        a {
+            display: inline;
+            font-family: $second-font-family;
+            font-size: 1rem;
+            padding: 0.625rem;
+            border: none;
+            background-color: $second-color;
+            border-radius: 5px;
+            align-self: flex-start;
+            &:visited {
+                color: $black-color;
+            }
+            &:link {
+                color: $black-color;
+            }
         }
-        &:link {
-            color: $black-color;
+    }
+    @media screen and (max-width: 1690px) {
+        width: 60vw;
+        &__content {
+            justify-content: start;
+        }
+    }
+
+    @media screen and (map_get($media_queries, "tablet")) {
+        @include flex(flex, null, center);
+        width: 80vw;
+        flex-direction: column-reverse;
+        border: 3px solid $second-color;
+
+        &__img {
+            width: 80vw;
+            height: 25rem;
+            box-shadow: none;
+            img {
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
         }
     }
 }

@@ -13,3 +13,9 @@ $white-color: white;
 $black-color: black;
 
 $box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.23);
+
+$media_queries: (
+    "mobile": "max-width: 768px",
+    "tablet": "max-width: 1200px",
+    "desktop": "max-width: 1596px"
+);
