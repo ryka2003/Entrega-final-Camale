@@ -1,0 +1,89 @@
+.main__header {
+    max-width: 100vw;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8099440459777661) 0%, rgba(255, 255, 255, 0) 100%);
+    @media screen and (map_get($media_queries, "mobile")) {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9892157546612395) 92%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+.navbar {
+    .container-fluid {
+        align-items: flex-start;
+    }
+    &-expand-md {
+        padding: 0;
+    }
+    &-toggler {
+        padding: 1rem;
+        border: 0 none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &-collapse {
+        justify-content: flex-end;
+    }
+    &-brand {
+        @include marpad(0, 1rem);
+    }
+    &-toggler-icon {
+        font-size: 1.5rem;
+    }
+    @media screen and (map_get($media_queries, "tablet")) {
+        a {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (map_get($media_queries, "mobile")) {
+        &-brand {
+            @include marpad(0, 1rem);
+            img {
+                height: 100px;
+                width: auto;
+            }
+        }
+        &-nav {
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.nav {
+    &__ul {
+        @include marpad(0, 1rem);
+        font-family: $second-font-family;
+        font-size: 1.5rem;
+    }
+    &__list {
+        padding: 0;
+        display: none;
+        background-color: $off-white-08;
+    }
+}
+
+.dropdown-menu {
+    li {
+        padding: 0 0.5rem;
+        &:focus {
+            background-color: $hover-color;
+        }
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+    border: 0 none;
+    overflow: hidden;
+}
+.dropdown-item {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    &:focus {
+        background-color: $no-color;
+    }
+    &:hover {
+        background-color: $no-color;
+    }
+}
