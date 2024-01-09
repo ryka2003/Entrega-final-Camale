@@ -3,17 +3,56 @@
     margin-bottom: 4rem;
     width: 100%;
     flex-direction: column;
-}
-.inks-section__container {
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    width: 40vw;
-    margin: 0 auto;
-    .inks-section__img {
+    &__text {
+        font-family: $main-font-family;
+        font-size: 2.5rem;
+        display: none;
+        padding: 0.5rem;
+        text-align: center;
+        line-height: normal;
+        text-shadow:
+            0 0 10px #ffffff,
+            2px 2px 15px rgba(255, 255, 255, 0.69);
+        @media screen and (map_get($media_queries, "desktop")) {
+            font-size: 1.5rem;
+        }
+        @media screen and (map_get($media_queries, "mobile")) {
+            font-size: 2rem;
+        }
+    }
+    &__container {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        width: 40vw;
+        margin: 0 auto;
+
+        div {
+            &:hover {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+        }
+
+        @media screen and (map_get($media_queries, "tablet")) {
+            width: 60vw;
+            height: 18.75rem;
+        }
+
+        @media screen and (map_get($media_queries, "mobile")) {
+            width: 60vw;
+            height: auto;
+            @include flex(grid, center, center);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-column-gap: 1rem;
+        }
+    }
+
+    &__img {
         @include flex(flex, center, center);
         background-size: cover;
         transition: all 0.3s ease;
@@ -37,39 +76,12 @@
             background-image: url("../imgs/pen-inks/sailor-ink.jpg");
         }
         &:hover {
-            h6 {
+            .inks-section__text {
                 display: block;
             }
         }
-    }
-    div {
-        &:hover {
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-        }
-    }
-    h6 {
-        font-family: $main-font-family;
-        font-size: 2.5rem;
-        display: none;
-        padding: 0.5rem;
-        text-align: center;
-        text-shadow:
-            0 0 10px #ffffff,
-            2px 2px 15px rgba(255, 255, 255, 0.69);
-    }
-    @media screen and (map_get($media_queries, "tablet")) {
-        width: 60vw;
-        height: 18.75rem;
-    }
-    @media screen and (map_get($media_queries, "mobile")) {
-        width: 60vw;
-        height: auto;
-        @include flex(grid, center, center);
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-column-gap: 1rem;
-        .inks-section__img {
+
+        @media screen and (map_get($media_queries, "mobile")) {
             height: 60vw;
             &:nth-child(1) {
                 grid-row-start: 1;

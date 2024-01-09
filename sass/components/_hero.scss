@@ -1,19 +1,23 @@
-.main__section {
+.hero {
     @include flex(flex, center, center);
     flex-direction: column;
     background-size: cover;
     background-position: center;
     min-height: 85vh;
     max-width: 100vw;
-    h1 {
+    &__title {
         margin: 0;
         text-align: center;
         font-size: 3.5rem;
         font-weight: 400;
         font-family: $main-font-family;
     }
-    h3 {
+    &__subtitle {
         text-align: center;
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: $second-font-family;
     }
 
     &--index {
@@ -31,18 +35,18 @@
     &--to-buy {
         background-image: url("../imgs/main-section/pilot-close-up.jpg");
     }
-    &--group {
+    &__content-wrapper {
         padding: 5px 0 5px 0;
         width: 100vw;
         background-color: $semi-white-transparency;
     }
     @media screen and (map_get($media_queries, "mobile")) {
-        h1 {
+        &__title {
             padding: 1.5rem;
             font-size: 2.5rem;
             font-weight: 200;
         }
-        h3 {
+        &__subtitle {
             font-size: 1.5rem;
             font-weight: 200;
         }

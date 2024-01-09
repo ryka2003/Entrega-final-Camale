@@ -20,63 +20,84 @@
         font-weight: 350;
     }
 }
-.to-buy__container {
-    @include flex(flex, center, null);
-    gap: 5rem;
-    article {
-        @include flex(flex, null, stretch);
-    }
-    @media screen and (map_get($media_queries, "tablet")) {
-        gap: 1rem;
+
+.to-buy {
+    &__container {
+        @include flex(flex, center, null);
+        flex-wrap: wrap;
+        width: 60vw;
+        gap: 2rem;
+        margin: 0 auto 3rem;
+        @media screen and (map_get($media_queries, "tablet")) {
+            width: 80vw;
+            gap: 1rem;
+        }
+        @media screen and (map_get($media_queries, "mobile")) {
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+        }
+        .article-to-buy {
+            max-width: calc((100% / 3) - ((2rem * 2) / 3));
+            flex: 1 0 calc((100% / 3) - ((2rem * 2) / 3));
+            margin: 0 auto;
+            @media screen and (map_get($media_queries, "tablet")) {
+                max-width: calc((100% / 2) - 1rem);
+                flex: 1 0 calc((100% / 2) - 1rem);
+            }
+            @media screen and (map_get($media_queries, "mobile")) {
+                max-width: none;
+                flex: 1 0 auto;
+                width: 100%;
+                padding: 0 2rem;
+            }
+        }
     }
 
-    @media screen and (map_get($media_queries, "mobile")) {
+    &__card {
+        margin: 1rem 0;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-    }
-}
-.to-buy__card {
-    margin: 1rem 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-    width: 15vw;
-    box-shadow: $box-shadow;
+        box-shadow: $box-shadow;
+        max-width: 100%;
+        min-height: 100%;
 
-    ul {
-        padding: 1.5rem;
-    }
-    img {
-        width: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-    a {
-        &:visited {
-            color: $black-color;
-        }
-        &:link {
-            color: $black-color;
-        }
-    }
-
-    @media screen and (map_get($media_queries, "tablet")) {
-        width: 30vw;
-        div {
-            width: 100%;
-        }
-    }
-    @media screen and (map_get($media_queries, "mobile")) {
-        height: -webkit-fit-content;
-        height: -moz-fit-content;
-        height: fit-content;
-        width: 80vw;
-        div {
-            width: 100%;
-            height: 40%;
+        ul {
+            padding: 1.5rem;
         }
         img {
             width: 100%;
-            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+        a {
+            &:visited {
+                color: $black-color;
+            }
+            &:link {
+                color: $black-color;
+            }
+        }
+
+        @media screen and (map_get($media_queries, "tablet")) {
+            div {
+                width: 100%;
+            }
+        }
+        @media screen and (map_get($media_queries, "mobile")) {
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            width: 100%;
+
+            div {
+                width: 100%;
+                height: 40%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

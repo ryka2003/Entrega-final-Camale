@@ -1,11 +1,14 @@
+/* configuracion */
 @import "./global/variables";
 @import "./global/mixins";
+/* globales */
 @import "./global/global-styles";
-
+@import "./components/header";
+@import "./components/footer";
+@import "./components/hero";
+/* pages */
 @import "./pages/home";
 @import "./pages/history";
 @import "./pages/brands";
 @import "./pages/to-buy";
 @import "./pages/contact";
-
-/* #################### */

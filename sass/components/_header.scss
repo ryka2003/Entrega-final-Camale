@@ -1,9 +1,9 @@
-.main__header {
+.header {
     max-width: 100vw;
     width: 100%;
     position: absolute;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8099440459777661) 0%, rgba(255, 255, 255, 0) 100%);
-    @media screen and (map_get($media_queries, "mobile")) {
+    @media screen and (max-width: 992px) {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.9892157546612395) 92%, rgba(255, 255, 255, 0) 100%);
     }
@@ -37,11 +37,11 @@
         }
     }
 
-    @media screen and (map_get($media_queries, "mobile")) {
+    @media screen and (max-width: 992px) {
         &-brand {
             @include marpad(0, 1rem);
             img {
-                height: 100px;
+                height: 6.25rem;
                 width: auto;
             }
         }

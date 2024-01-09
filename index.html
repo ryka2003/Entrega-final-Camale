@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Pacifico&display=swap"
@@ -20,10 +19,10 @@
 
 </head>
 
-<body>
+<body class="main">
     <!-- HEADER + NAV -->
-    <header class="main__header header">
-        <nav class="header__nav nav navbar navbar-expand-md">
+    <header class="header">
+        <nav class="header__nav nav navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -33,7 +32,7 @@
                 <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="logo" height="175px"
                         width="175px"></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav__ul navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="nav__ul navbar-nav">
                         <li class="nav__li nav-item active">
                             <a class="nav__a nav-link" href="./pages/history.html">Historia</a>
                         </li>
@@ -74,12 +73,12 @@
             </div>
         </nav>
     </header>
-    <main class="main">
+    <main>
         <!-- HERO -->
-        <section class="main__section main__section--index">
-            <div class="main__section--group">
-                <h1 class="section__h1">Escritura Fina</h1>
-                <h3 class="section__h3">de novato a coleccionista</h3>
+        <section class="hero hero--index">
+            <div class="hero__content-wrapper">
+                <h1 class="hero__title">Escritura Fina</h1>
+                <p class="hero__subtitle">de novato a coleccionista</p>
             </div>
         </section>
         <!-- GALERIA -->
@@ -87,16 +86,16 @@
             <h2 class="inks-section__h2 main__h2">Tintas</h2>
             <div class="inks-section__container">
                 <div class="inks-section__img">
-                    <h6>Diamine Marine</h6>
+                    <p class="inks-section__text">Diamine Marine</p>
                 </div>
                 <div class="inks-section__img">
-                    <h6>Organics Studio Nitrogen</h6>
+                    <p class="inks-section__text">Organics Studio Nitrogen</p>
                 </div>
                 <div class="inks-section__img">
-                    <h6>Robert Oster Rose Gold Antiqua</h6>
+                    <p class="inks-section__text">Robert Oster Rose Gold Antiqua</p>
                 </div>
                 <div class="inks-section__img">
-                    <h6>Sailor Manyo Koke</h6>
+                    <p class="inks-section__text">Sailor Manyo Koke</p>
                 </div>
             </div>
 
@@ -121,8 +120,8 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="main__footer">
-        <div class="footer__nav footer">
+    <footer class="main__footer footer">
+        <div class="footer__nav">
             <ul>
                 <li class="footer__li"><a class="footer__a" href="./pages/history.html">Historia</a></li>
                 <li class="footer__li"><a class="footer__a" href="./pages/brands.html">Marcas</a></li>
@@ -132,14 +131,14 @@
         </div>
         <div class="footer__social">
             <ul class="footer__social--group">
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"
-                            aria-hidden="true"></i>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" title="Link a Youtube"><i
+                            class="fa fa-youtube-play" aria-hidden="true"></i>
 
                     </a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
-                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" title="Link a Instagram"><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" title="Link a Facebook"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a></li>
             </ul>
 
         </div>
