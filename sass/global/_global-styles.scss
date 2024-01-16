@@ -19,6 +19,9 @@ h2 {
     font-family: $second-font-family;
     color: $main-color;
     font-size: 4rem;
+    @media screen and (map_get($media_queries, "mobile-xxs")) {
+        font-size: 2rem;
+    }
 }
 p {
     padding: 0.9375rem;

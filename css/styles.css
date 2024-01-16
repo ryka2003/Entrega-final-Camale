@@ -25,6 +25,11 @@ h2 {
   color: #c9b488;
   font-size: 4rem;
 }
+@media screen and (max-width: 320px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 p {
   padding: 0.9375rem;
@@ -171,6 +176,15 @@ p {
   }
   .footer__social {
     padding: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer ul {
+    padding: 0;
+  }
+  .footer__nav {
+    padding: 1rem 0;
+    font-size: 0.7rem;
   }
 }
 

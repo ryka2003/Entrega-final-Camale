@@ -15,6 +15,7 @@ $black-color: black;
 $box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.23);
 
 $media_queries: (
+    /* Iphone 5/SE */ "mobile-xxs": "max-width: 320px",
     "mobile": "max-width: 768px",
     "tablet": "max-width: 1200px",
     "desktop": "max-width: 1596px"

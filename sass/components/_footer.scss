@@ -48,6 +48,15 @@
             padding: 0;
         }
     }
+    @media screen and (map_get($media_queries, "mobile-xxs")) {
+        ul {
+            padding: 0;
+        }
+        &__nav {
+            padding: 1rem 0;
+            font-size: 0.7rem;
+        }
+    }
 }
 
 .footer__social--group {
