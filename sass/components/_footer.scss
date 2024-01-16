@@ -9,6 +9,9 @@
         padding: 0.3125rem;
         display: inline;
     }
+    ul {
+        padding: 0;
+    }
     a {
         &:visited {
             color: $white-color;
