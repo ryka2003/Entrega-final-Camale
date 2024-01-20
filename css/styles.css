@@ -642,6 +642,7 @@ p {
   }
 }
 
+/* @import "../components/to-buy-card"; */
 .card__h3,
 .card__h4 {
   text-align: left;
