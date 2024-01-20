@@ -32,6 +32,9 @@
         font-size: 1rem;
         color: $off-white-color;
         padding: 1.3rem 0 0 0;
+        a:hover {
+            text-decoration: underline;
+        }
     }
     @media screen and (map_get($media_queries, "tablet")) {
         i {

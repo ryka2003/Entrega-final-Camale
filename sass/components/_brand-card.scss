@@ -26,18 +26,17 @@
         flex-direction: column;
         a {
             display: inline;
-            font-family: $second-font-family;
-            font-size: 1rem;
-            padding: 0.625rem;
-            border: none;
-            background-color: $second-color;
-            border-radius: 5px;
             align-self: flex-start;
+            @include basic-button;
+
             &:visited {
                 color: $black-color;
             }
             &:link {
                 color: $black-color;
+            }
+            &:hover {
+                @include hover-button;
             }
         }
     }

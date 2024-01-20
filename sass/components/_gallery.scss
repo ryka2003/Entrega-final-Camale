@@ -17,7 +17,11 @@
             font-size: 1.5rem;
         }
         @media screen and (map_get($media_queries, "mobile")) {
+            text-shadow: none;
+            color: $second-color;
+            mix-blend-mode: screen;
             font-size: 2rem;
+            display: block;
         }
     }
     &__container {
@@ -34,6 +38,14 @@
             &:hover {
                 -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
+                @media screen and (map_get($media_queries, "mobile")) {
+                    -webkit-filter: grayscale(50%);
+                    filter: grayscale(50%);
+                }
+            }
+            @media screen and (map_get($media_queries, "mobile")) {
+                -webkit-filter: none;
+                filter: none;
             }
         }
 
@@ -83,6 +95,7 @@
 
         @media screen and (map_get($media_queries, "mobile")) {
             height: 60vw;
+
             &:nth-child(1) {
                 grid-row-start: 1;
                 grid-column-start: 1;

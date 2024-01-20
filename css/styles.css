@@ -163,6 +163,9 @@ p {
   color: #eee;
   padding: 1.3rem 0 0 0;
 }
+.footer__nav a:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 1200px) {
   .footer i {
     font-size: 1rem;
@@ -300,7 +303,11 @@ p {
 }
 @media screen and (max-width: 768px) {
   .inks-section__text {
+    text-shadow: none;
+    color: #d9ccb2;
+    mix-blend-mode: screen;
     font-size: 2rem;
+    display: block;
   }
 }
 .inks-section__container {
@@ -316,6 +323,18 @@ p {
 .inks-section__container div:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+@media screen and (max-width: 768px) {
+  .inks-section__container div:hover {
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .inks-section__container div {
+    -webkit-filter: none;
+    filter: none;
+  }
 }
 @media screen and (max-width: 1200px) {
   .inks-section__container {
@@ -454,13 +473,23 @@ p {
   border: solid 1px #eee;
   padding: 0.625rem;
 }
+.form__input:focus {
+  outline: none;
+  border: solid 1px #d9ccb2;
+}
 .form__input--submit {
   font-family: "Oxygen", sans-serif;
   font-size: 1rem;
   padding: 0.625rem;
-  border: none;
+  border: solid 1px #d9ccb2;
   background-color: #d9ccb2;
   border-radius: 0.3125rem;
+  transition: all 0.2s ease-in-out;
+}
+.form__input--submit:hover {
+  border: solid 1px #c9b488;
+  color: #c9b488;
+  background-color: white;
 }
 @media screen and (max-width: 1200px) {
   .form {
@@ -565,19 +594,25 @@ p {
 }
 .card__content a {
   display: inline;
+  align-self: flex-start;
   font-family: "Oxygen", sans-serif;
   font-size: 1rem;
   padding: 0.625rem;
-  border: none;
+  border: solid 1px #d9ccb2;
   background-color: #d9ccb2;
-  border-radius: 5px;
-  align-self: flex-start;
+  border-radius: 0.3125rem;
+  transition: all 0.2s ease-in-out;
 }
 .card__content a:visited {
   color: black;
 }
 .card__content a:link {
   color: black;
+}
+.card__content a:hover {
+  border: solid 1px #c9b488;
+  color: #c9b488;
+  background-color: white;
 }
 @media screen and (max-width: 1690px) {
   .card {
