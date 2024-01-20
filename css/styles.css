@@ -781,6 +781,9 @@ p {
   margin: 0;
 }
 .form__group h3 {
+  font-family: "Pacifico", cursive;
+  color: black;
+  font-size: 1.8rem;
   text-align: center;
   padding: 0.625rem;
 }
