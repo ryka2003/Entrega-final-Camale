@@ -20,7 +20,7 @@ h2 {
     color: $main-color;
     font-size: 4rem;
 
-    @media screen and (map_get($media_queries, "mobile-xxs")) {
+    @media screen and (map_get($media_queries, "mobile")) {
         font-size: 2rem;
     }
 }
