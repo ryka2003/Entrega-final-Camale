@@ -2,7 +2,8 @@
     margin: 0 auto 0 auto;
     width: 60vw;
     @media screen and (map_get($media_queries, "tablet")) {
-        padding: 2rem;
+        text-align: justify;
+        padding: 0.5rem;
         width: 100vw;
     }
 }

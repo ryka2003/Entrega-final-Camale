@@ -1,7 +1,7 @@
 .card__h3,
 .card__h4 {
     text-align: left;
-    padding: 0.65rem;
+    padding: 1rem;
 }
 
 .card {
@@ -19,6 +19,9 @@
         font-size: 1.2rem;
         font-weight: 350;
     }
+    @media screen and (map_get($media_queries, "tablet")) {
+        align-items: normal;
+    }
 }
 
 .to-buy {
@@ -28,6 +31,7 @@
         width: 60vw;
         gap: 2rem;
         margin: 0 auto 3rem;
+
         @media screen and (map_get($media_queries, "tablet")) {
             width: 80vw;
             gap: 1rem;
@@ -35,7 +39,6 @@
         @media screen and (map_get($media_queries, "mobile")) {
             width: 100vw;
             flex-direction: column;
-            align-items: center;
         }
         .article-to-buy {
             max-width: calc((100% / 3) - ((2rem * 2) / 3));

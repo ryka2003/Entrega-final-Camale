@@ -71,9 +71,16 @@
         background-color: $main-color;
         height: 3.125rem;
         width: 3.125rem;
+        border: solid 1px $main-color;
         border-radius: 50%;
         color: $white-color;
         font-size: 1.5rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            border: solid 1px $main-color;
+            background-color: $white-color;
+            color: $main-color;
+        }
     }
     @include flex(flex, center, null);
     @include marpad(0, 0);

@@ -52,6 +52,7 @@
         display: block;
         border: solid 1px #eee;
         padding: 0.625rem;
+        width: 100%;
         &:focus {
             outline: none;
             border: solid 1px $second-color;

@@ -3,7 +3,7 @@
     width: 100%;
     position: absolute;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8099440459777661) 0%, rgba(255, 255, 255, 0) 100%);
-    @media screen and (max-width: 992px) {
+    @media screen and (map_get($media_queries, "bootstrap-media-lg")) {
         background: rgb(255, 255, 255);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.9892157546612395) 92%, rgba(255, 255, 255, 0) 100%);
     }
@@ -12,6 +12,7 @@
     .container-fluid {
         align-items: flex-start;
     }
+
     &-expand-md {
         padding: 0;
     }
@@ -35,13 +36,18 @@
         a {
             font-size: 1.5rem;
         }
+        @media screen and (map_get($media_queries, "bootstrap-media-lg")) {
+            .container-fluid {
+                align-items: center;
+            }
+        }
     }
 
-    @media screen and (max-width: 992px) {
+    @media screen and (map_get($media_queries, "bootstrap-media-lg")) {
         &-brand {
             @include marpad(0, 1rem);
             img {
-                height: 6.25rem;
+                height: 5rem;
                 width: auto;
             }
         }
